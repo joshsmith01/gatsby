@@ -112,7 +112,7 @@ plugins.
 
 Let's start by creating a new site. At this point it probably makes sense to close the terminal windows you used to build tutorial-part-one so that you don't accidentally start building tutorial-part-two in the wrong place. If you don't close tutorial-part-one prior to building tutorial-part-two, you will see that tutorial-part-two appears at localhost:8001 instead of localhost:8000.
 
-Similar to part one, open a new terminal window and run the following to create a new site:
+Just like in part one, open a new terminal window and run the following commands to create a new Gatsby site in a directory called `tutorial-part-two`. Then, change to this new directory:
 
 ```shell
 gatsby new tutorial-part-two https://github.com/gatsbyjs/gatsby-starter-hello-world
@@ -347,9 +347,7 @@ Gatsby works out of the box with CSS Modules.
 Let's build a page using CSS Modules.
 
 First, let's create a new `Container` component which we'll use for each of the
-CSS-in-JS examples. Create a `components` directory at `src/components` and
-then, in this directory, create a file named `container.js` and paste the
-following:
+CSS-in-JS examples. Create a new directory at `src/components` and then, in this new directory, create a file named `container.js` and paste the following:
 
 ```javascript
 import React from "react";

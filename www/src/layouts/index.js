@@ -63,7 +63,7 @@ class DefaultLayout extends React.Component {
       position: `fixed`,
       top: `calc(${presets.headerHeight} + 2.8rem - 1px)`,
       overflowY: `auto`,
-      height: `calc(100vh - ${presets.headerHeight} + 1px)`,
+      height: `calc(100vh - ${presets.headerHeight} - 2.8rem + 1px)`,
       WebkitOverflowScrolling: `touch`,
       "::-webkit-scrollbar": {
         width: `6px`,
@@ -146,15 +146,7 @@ class DefaultLayout extends React.Component {
             position: isHomepage || isBlogLanding ? `absolute` : `fixed`,
           }}
         >
-          Live 2-day Gatsby training with Kyle Mathews! Sign up for{" "}
-          <OutboundLink
-            target="_blank"
-            rel="noopener"
-            href="https://workshop.me/2018-04-gatsby"
-          >
-            SF in April
-          </OutboundLink>{" "}
-          and{" "}
+          Live 2-day Gatsby training with Kyle Mathews! Sign up for{` `}
           <OutboundLink
             target="_blank"
             rel="noopener"

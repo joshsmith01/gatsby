@@ -48,10 +48,11 @@ To install a starter, first install Gatsby's command line program by running the
 npm install --global gatsby-cli
 ```
 
-Once that's installed, type the following command in and hit ENTER:
+Once that's installed, open a new terminal window and run the following commands to create a new Gatsby site in a directory called `tutorial-part-one` and then move to this new directory:
 
 ```sh
 gatsby new tutorial-part-one https://github.com/gatsbyjs/gatsby-starter-hello-world
+cd tutorial-part-one
 ```
 
 This command downloads the files for the starter and then installs the needed
@@ -60,12 +61,10 @@ nothing is happening at first; be patient!
 
 Now let's try running Gatsby!
 
-Gatsby has a built-in development server. Let's start it up by typing in the
-following commands into the same terminal window you've used so far in this
-tutorial.
+Gatsby has a built-in development server. Let's start it up by running the
+following command:
 
 ```sh
-cd tutorial-part-one
 gatsby develop
 ```
 
@@ -98,10 +97,10 @@ should change within a second (tip: you will always need to save changes before 
 
 Try some other tricks, like the ones below:
 
-1. Gatsby lets you add "inline styles" via a JavaScript style "prop" (we'll
-   learn about other styling options later).
+1.  Gatsby lets you add "inline styles" via a JavaScript style "prop" (we'll
+    learn about other styling options later).
 
-   Try replacing your page component with this:
+    Try replacing your page component with this:
 
 ```jsx
 import React from "react";
@@ -111,7 +110,7 @@ export default () => <div style={{ color: `blue` }}>Hello Gatsby!</div>;
 
 Change the color to "pink". Then to "tomato".
 
-2. Add some paragraph text.
+2.  Add some paragraph text.
 
 ```jsx{5-6}
 import React from "react";
@@ -123,7 +122,7 @@ export default () =>
  </div>
 ```
 
-3. Add an image (in this case, a random one from Unsplash)
+3.  Add an image (in this case, a random one from Unsplash)
 
 ```jsx{7}
 import React from "react";
